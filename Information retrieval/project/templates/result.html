@@ -1,0 +1,31 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table{
+            margin-left: 540px;
+            margin-top: 150px;
+            box-shadow:20px 20px;
+        }
+        caption{
+            padding-bottom: 20px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+<table border="1" >
+<caption>Results</caption>
+    {% for key,value in data.items() %}
+    <tr>
+     <th>{{key}}</th>
+     <td> {{value}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+        
+
+</body>
+</html>
